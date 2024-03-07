@@ -17,6 +17,7 @@ export type MountReturnType = {
 const mount = (el: Element, props: PaymentsListProps) : MountReturnType => {
 
   const routes = [
+    {path: "/find/:orderId", element:  <FindTransactionPage {...props} />},
     {path: "*", element:  <FindTransactionPage {...props} />},
   ];
 
